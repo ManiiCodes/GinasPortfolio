@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Media | Regina Kadima</title>
+  <meta name="description" content="UK 20s Podcast — short-form clips and long-form episodes." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <div class="profile-wrap">
+      <img src="assets/attachments/profile.jpg" alt="Regina Kadima" class="profile-img" />
+      <a class="logo" href="index.html">Regina Kadima</a>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="internship.html">Internship Work</a>
+      <a href="#short">Short Form</a>
+      <a href="#long">Long Form</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">UK 20s Podcast</p>
+          <h1>Media Clips</h1>
+          <p class="sub">Watch short-form clips directly on this page.</p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#short">View Short Clips</a>
+            <a class="btn" href="index.html">Back to Home</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <h2>Highlights</h2>
+            <div class="pill-row" id="pillRow"></div>
+            <p class="muted">Use preview for modal view or press play on any clip.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHORT FORM -->
+    <section class="section" id="short">
+      <div class="section-head">
+        <h2>Short Form</h2>
+        <p class="muted">Quick clips and moments.</p>
+      </div>
+
+      <div class="grid" id="mediaShortGrid">
+
+        <video controls width="100%">
+          <source src="assets/attachments/1.mp4" type="video/mp4">
+        </video>
+
+        <video controls width="100%">
+          <source src="assets/attachments/2.mp4" type="video/mp4">
+        </video>
+
+        <video controls width="100%">
+          <source src="assets/attachments/3.mp4" type="video/mp4">
+        </video>
+
+        <video controls width="100%">
+          <source src="assets/attachments/4.mp4" type="video/mp4">
+        </video>
+
+        <video controls width="100%">
+          <source src="assets/attachments/5.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </section>
+
+    <!-- LONG FORM -->
+    <section class="section" id="long">
+      <div class="section-head">
+        <h2>Long Form</h2>
+        <p class="muted">Full episodes and extended conversations.</p>
+      </div>
+
+      <div class="list">
+        <div class="list-item">
+          <div>
+            <h3>Long-form episodes coming soon</h3>
+            <p class="muted">Full UK 20s Podcast episodes will be added here.</p>
+          </div>
+          <span class="muted">🎙️ In production</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+
+      <div class="modal-body">
+        <div class="modal-media" id="modalMedia"></div>
+
+        <div class="modal-content">
+          <h3 id="modalTitle"></h3>
+          <p class="muted" id="modalMeta"></p>
+          <p id="modalDesc"></p>
+
+          <div class="tag-row" id="modalTags"></div>
+          <div class="cta-row" id="modalLinks"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="muted">© <span id="year"></span> Regina Kadima</p>
+  </footer>
+
+</body>
+</html>
